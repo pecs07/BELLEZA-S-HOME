@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    background:#ffffff;
+    font-family: 'calibri';
+
+  }
+  body>h1{
+    font-family: 'Beau Rivage', cursive;
+    text-align: center;
+    font-size: 100px;
+    color: #ff69b4;
+    }
+  header {
+    background: #ffefd5;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+  }
+  
+  .menu {
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 4px;
+  
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+ #menudesplegable{
+     margin: auto;
+     width: 1300px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ ul, ol{
+     list-style: none;
+ }
+ .elementos li a{
+    background-color: #ffefd5;
+    color: #8b4513;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+ }
+ .elementos li a:hover{
+background-color: #444;
+ }
+ .elementos > li{
+      float: left;
+ }
+ .elementos li ul {
+     display: none;
+     position: absolute;
+     max-width: 150px;
+ }
+ .elementos li:hover > ul {
+     display: block;
+ }
+ .elementos li lu li {
+     position: relative;
+ }
