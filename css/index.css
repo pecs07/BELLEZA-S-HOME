@@ -9,11 +9,17 @@ body {
     font-family: 'calibri';
 
   }
-  body>h1{
+  /*estilo letra titulo*/
+  .letralogo{
     font-family: 'Beau Rivage', cursive;
-    text-align: center;
+    text-align:center;
     font-size: 100px;
     color: #ff69b4;
+    
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
     }
   header {
     background: #ffefd5;
@@ -23,6 +29,68 @@ body {
     display: table;
   }
   
+
+  /*estilos de la galeria*/
+.titulobanner {
+  color: #8b4513;
+  text-align: center;
+}
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galeria li {
+  margin: 5px;
+}
+.galeria img {
+width: 250px;
+height: 200px;
+}
+
+/*estilo del modal*/
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal h3 {
+  color: #e61515;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.imagen {
+  width: 100%;
+  height: 50%;  
+}
+
+.imagen a {
+color: blue;
+font-size: 40px;
+text-decoration: none;
+margin: 0 10px;
+}
+
+.imagen img {
+  width: 500px;
+  height: 100%;
+}
+
+/*Estilo menu desplegable*/
   .menu {
     width: 900px;
     margin: 0 auto;
@@ -101,3 +169,27 @@ background-color: #444;
  .elementos li lu li {
      position: relative;
  }
+
+
+ 
+ #siguenos {
+  width: 600px;
+  height: 120px;
+  margin-top: 500px;
+
+}
+  /*background-color: aqua;*/
+}
+#siguenos>a>img{
+  width: 150px;
+  height: 120px;
+  
+
+footer{
+  width: 300px;
+  height: 120px;
+  margin-top: 400px;
+  background-color: aqua;
+
+}
+

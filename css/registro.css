@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    background:#ffffff;
+    font-family: 'calibri';
+
+  }
+  
+  .letralogo{
+    font-family: 'Beau Rivage', cursive;
+    text-align:center;
+    font-size: 100px;
+    color: #ff69b4;
+    
+    }
+    .logo{
+      display: flex;
+      justify-content: center;
+    }
+  header {
+    background: #ffefd5;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+  }
+  
+  .menu {
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 4px;
+  
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+  form{
+    position: absolute;
+    top: 220px;
+    left: 35%;
+    width: 30%;
+   
+    text-align: center;
+    font-size: 22px;
+}
+form>input{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border-color: #FAAC58;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: 22px;
+}
+form>input:focus{
+    outline: none;
+}
+form>button{
+    background-color: #BDBDBD;
+    padding: 15px;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 22px;
+    border-color: #FAAC58;
+    box-shadow: 5px 5px 5px #5883fa;
+   }
+   form>button:hover{
+       color: rgb(19, 6, 209);
+       font-size: 22px;
+       font-family: ;
+   }
