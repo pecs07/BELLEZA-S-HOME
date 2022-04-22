@@ -74,3 +74,19 @@
     nav ul li a:hover::before {
       width: 100%;
     }
+
+/*estilo footer*/
+footer{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 120px;
+  margin-top: 30%;
+  background-color: aqua;
+}
+footer>a>img{
+  width: 30%;
+  height: 60%;
+}
+    

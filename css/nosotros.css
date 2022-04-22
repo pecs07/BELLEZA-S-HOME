@@ -75,25 +75,32 @@ header {
     width: 100%;
   }
 
-#video {
-  position: absolute;
 
+
+  /*estilo del video*/
+#video>iframe { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+#mapa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-  #siguenos {
-    width: 600px;
-    height: 120px;
-    margin-top: 500px;
-    /*background-color: aqua;*/
-  }
-  #siguenos>a>img{
-    width: 150px;
-    height: 120px;
-  }
-
+ /*estilo footer*/
   footer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 120px;
-    margin-top: 400px;
+    margin-top: 5%;
     background-color: aqua;
+  }
+  footer>a>img{
+    width: 30%;
+    height: 60%;
   }
