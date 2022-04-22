@@ -7,22 +7,28 @@
   body {
     background:#ffffff;
     font-family: 'calibri';
+    /*stilos fondo */
+    height: 800px;
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    background-size: 100rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
   
   }
   /*estilo letra titulo*/
   .letralogo{
     font-family: 'Beau Rivage', cursive;
-    text-align:center;
-    font-size: 100px;
+    text-align:left ;
+    font-size: 100%;
     color: #ff69b4;
     
     }
-    .logo {
-      display: flex;
-      justify-content: center;
-    }
+      
   header {
-    background: #ffefd5;
+    background: #fadeb0;
     width: 100%;
     clear: both;
     content:'';
@@ -34,9 +40,10 @@
       margin: 0 auto;
     }
     
+    
     img {
-      width: 300px;
-      height: 300px;
+      width: 50px;
+      height: 50px;
       float: left;
       padding: 5px;
     
@@ -75,18 +82,30 @@
       width: 100%;
     }
 
+
+    /* estilo bootstrap*/
+    .card-img-top{
+      width: 100px;
+      height: 300px; 
+      float: left;
+      padding: 10px;
+    }
 /*estilo footer*/
 footer{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 900px;
   height: 120px;
   margin-top: 30%;
   background-color: aqua;
 }
 footer>a>img{
-  width: 30%;
-  height: 60%;
+  width: 50px;
+  height: 50px;
 }
-    
+footer>span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
