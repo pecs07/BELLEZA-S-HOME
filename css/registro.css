@@ -1,26 +1,28 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-body {
-    background:#ffffff;
-    font-family: 'calibri';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  }
+body {
+  background:#ffffff;
+  font-family: 'calibri';
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-color: #FFE4B5;
+}
+/*estilo letra titulo*/
+.letralogo{
+  font-family: 'Beau Rivage', cursive;
+  text-align:center;
+  font-size: 50px;
+  color: #ff69b4;
   
-  .letralogo{
-    font-family: 'Beau Rivage', cursive;
-    text-align:center;
-    font-size: 100px;
-    color: #ff69b4;
-    
-    }
-    .logo{
-      display: flex;
-      justify-content: center;
-    }
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
   header {
     background: #ffefd5;
     width: 100%;
@@ -28,20 +30,18 @@ body {
     content:'';
     display: table;
   }
-  
+
   .menu {
     width: 900px;
     margin: 0 auto;
   }
   
-  img {
-    width: 150px;
-    height: 150px;
+  .logo div a img  {
+    width: 50px;
+    height: 50px;
     float: left;
-    padding: 4px;
-  
-  }
-  
+    padding: 8px;  
+  }  
   nav {
     float: right;
   }
@@ -54,6 +54,14 @@ body {
     position: relative;
   }
   
+  nav ul li a img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 4px;
+  }
+
+
   nav ul li a {
     text-decoration: none;
     color: #444;
@@ -74,14 +82,20 @@ body {
   nav ul li a:hover::before {
     width: 100%;
   }
+
+
+
   form{
     position: absolute;
     top: 220px;
     left: 35%;
-    width: 30%;
-   
+    width: 30%;   
     text-align: center;
     font-size: 22px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #d2b48c;
 }
 form>input{
     width: 80%;
@@ -98,16 +112,54 @@ form>input:focus{
     outline: none;
 }
 form>button{
-    background-color: #BDBDBD;
+    background-color: #ffe4e1;
     padding: 15px;
     width: 80%;
     border-radius: 20px;
     font-size: 22px;
     border-color: #FAAC58;
-    box-shadow: 5px 5px 5px #5883fa;
+  /*  box-shadow: 5px 5px 5px #f49ac2;*/
    }
    form>button:hover{
        color: rgb(19, 6, 209);
        font-size: 22px;
        font-family: ;
    }
+   section>h4{
+     font-size: 22px;
+     margin-bottom: 20px;
+   }
+
+  
+ /*estilo footer*/
+footer {
+  align-self: flex-end;
+  background-color: rgba(245, 193, 151, 0.884);
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+  padding: 15px 20px;
+  color: #8b4513;
+ 
+}
+footer>div>a>img{
+  width: 70px;
+  height: 50px;
+  float: right;
+  padding: 8px
+  
+}
+
+footer #logopagos img{
+
+  width: 600px;
+  height: 80px;
+  float: left;  
+}
+
+footer>address{
+  font-size: 15px;
+  font-style:italic;  
+  color: #8b4513;
+  
+}

@@ -1,26 +1,29 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-body {
-    background:#ffffff;
-    font-family: 'calibri';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  }
+body {
+  background:#ffffff;
+  font-family: 'calibri';
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-color: #FFE4B5;
+
+}
+/*estilo letra titulo*/
+.letralogo{
+  font-family: 'Beau Rivage', cursive;
+  text-align:center;
+  font-size: 50px;
+  color: #ff69b4;
   
-  .letralogo{
-    font-family: 'Beau Rivage', cursive;
-    text-align:center;
-    font-size: 100px;
-    color: #ff69b4;
-    
-    }
-    .logo{
-      display: flex;
-      justify-content: center;
-    }
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
   header {
     background: #ffefd5;
     width: 100%;
@@ -28,20 +31,18 @@ body {
     content:'';
     display: table;
   }
-  
+
   .menu {
     width: 900px;
     margin: 0 auto;
   }
   
-  img {
-    width: 150px;
-    height: 150px;
+  .logo div a img  {
+    width: 50px;
+    height: 50px;
     float: left;
-    padding: 4px;
-  
-  }
-  
+    padding: 8px;  
+  }  
   nav {
     float: right;
   }
@@ -54,6 +55,14 @@ body {
     position: relative;
   }
   
+  nav ul li a img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 4px;
+  }
+
+
   nav ul li a {
     text-decoration: none;
     color: #444;
@@ -74,6 +83,7 @@ body {
   nav ul li a:hover::before {
     width: 100%;
   }
+
   form{
     position: absolute;
     top: 220px;
@@ -116,4 +126,39 @@ textarea{
     max-height: 300px;
     min-width: 80%;
     min-height: 100px;
+    resize: none;
+}
+
+
+/*estilo footer*/
+footer {
+  align-self: flex-end;
+  background-color: rgba(245, 193, 151, 0.884);
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+  padding: 15px 20px;
+  color: #8b4513;
+ 
+}
+footer>div>a>img{
+  width: 70px;
+  height: 50px;
+  float: right;
+  padding: 8px
+  
+}
+
+footer #logopagos img{
+
+  width: 600px;
+  height: 80px;
+  float: left;  
+}
+
+footer>address{
+  font-size: 15px;
+  font-style:italic;  
+  color: #8b4513;
+  
 }

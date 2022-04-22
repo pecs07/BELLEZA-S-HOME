@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,13 +7,16 @@
 body {
   background:#ffffff;
   font-family: 'calibri';
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-color: #FFE4B5;
 
 }
 /*estilo letra titulo*/
 .letralogo{
   font-family: 'Beau Rivage', cursive;
   text-align:center;
-  font-size: 100px;
+  font-size: 50px;
   color: #ff69b4;
   
   }
@@ -21,27 +24,25 @@ body {
     display: flex;
     justify-content: center;
   }
-header {
-  background: #ffefd5;
-  width: 100%;
-  clear: both;
-  content:'';
-  display: table;
-}
+  header {
+    background: #ffefd5;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+  }
 
   .menu {
     width: 900px;
     margin: 0 auto;
   }
   
-  img {
-    width: 300px;
-    height: 300px;
+  .logo div a img  {
+    width: 50px;
+    height: 50px;
     float: left;
-    padding: 5px;
-  
-  }
-  
+    padding: 8px;  
+  }  
   nav {
     float: right;
   }
@@ -54,6 +55,14 @@ header {
     position: relative;
   }
   
+  nav ul li a img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 4px;
+  }
+
+
   nav ul li a {
     text-decoration: none;
     color: #444;
@@ -74,7 +83,21 @@ header {
   nav ul li a:hover::before {
     width: 100%;
   }
-
+ 
+  /*estilo texto presentacion*/
+  #nosotros{
+  font-family:'Times New Roman', Times, serif;
+  text-align:center;
+  font-size: 50px;
+  color: #8b4513;
+  }
+  #textopresentacion{
+  background-color: #FFE4B5;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:justify;
+  }
 
 
   /*estilo del video*/
@@ -84,23 +107,40 @@ header {
   margin-right: auto;
 }
   
-#mapa {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#video>p{
+  text-align: center;
+  font-size: large;
+  font-size: 30px;
+}
+/*estilo footer*/
+footer {
+  align-self: flex-end;
+  background-color: rgba(245, 193, 151, 0.884);
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  padding: 15px 20px;
+  color: #8b4513;
+ 
+}
+footer>div>a>img{
+  width: 70px;
+  height: 50px;
+  float: right;
+  padding: 8px
+  
 }
 
- /*estilo footer*/
-  footer{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 120px;
-    margin-top: 5%;
-    background-color: aqua;
-  }
-  footer>a>img{
-    width: 30%;
-    height: 60%;
-  }
+footer #logopagos img{
+
+  width: 600px;
+  height: 80px;
+  float: left;  
+}
+
+footer>address{
+  font-size: 15px;
+  font-style:italic;  
+  color: #8b4513;
+  
+}

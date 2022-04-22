@@ -2,18 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
   }
   
 body {
-    background:#ffffff;
+    background:#ffff;
     font-family: 'calibri';
-
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: #FFE4B5;
   }
   /*estilo letra titulo*/
   .letralogo{
     font-family: 'Beau Rivage', cursive;
     text-align:center;
-    font-size: 100px;
+    font-size: 50px;
     color: #ff69b4;
     
     }
@@ -21,178 +24,182 @@ body {
       display: flex;
       justify-content: center;
     }
-  header {
-    background: #ffefd5;
-    width: 100%;
-    clear: both;
-    content:'';
-    display: table;
-  }
-  
+    header {
+      background: #ffefd5;
+      width: 100%;
+      clear: both;
+      content:'';
+      display: table;
+    }
 
-  /*estilos de la galeria*/
-.titulobanner {
-  color: #8b4513;
-  text-align: center;
-}
-
-.galeria {
-  width: 90%;
-  margin: auto;
-  list-style: none;
-  padding: 20px;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.galeria li {
-  margin: 5px;
-}
-.galeria img {
-width: 250px;
-height: 200px;
-}
-
-/*estilo del modal*/
-.modal {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.modal h3 {
-  color: #e61515;
-  font-size: 30px;
-  text-align: center;
-  margin: 15px 0;
-}
-
-.imagen {
-  width: 100%;
-  height: 50%;  
-}
-
-.imagen a {
-color: blue;
-font-size: 40px;
-text-decoration: none;
-margin: 0 10px;
-}
-
-.imagen img {
-  width: 500px;
-  height: 100%;
-}
-
-/*Estilo menu desplegable*/
-  .menu {
-    width: 900px;
-    margin: 0 auto;
-  }
-  
- /* img {
-    width: 150px;
-    height: 150px;
-    float: left;
-    padding: 4px;  
-  }*/
-  
-  nav {
-    float: right;
-  }
-  
-  nav ul li {
-    list-style: none;
-    margin-left: 75px;
-    padding: 12px 0;
-    float: left;
-    position: relative;
-  }
-  
-  nav ul li a img {
-    width: 150px;
-    height: 150px;
-    float: left;
-    padding: 4px;
-  }
-
-
-  nav ul li a {
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-  }
-  
-  nav ul li a::before {
-    display: block;
-    content: '';
-    width: 0%;
-    background: #444;
-    height: 5px;
-    top:0;
-    position: absolute;
-    transition: width 0.2s;
-  }
-  
-  nav ul li a:hover::before {
-    width: 100%;
-  }
-
- #menudesplegable{
-     margin: auto;
-     width: 1300px;
-     font-family: Arial, Helvetica, sans-serif;
- }
- ul, ol{
-     list-style: none;
- }
- .elementos li a{
-    background-color: #ffefd5;
-    color: #8b4513;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
- }
- .elementos li a:hover{
-background-color: #444;
- }
- .elementos > li{
+    .menu {
+      width: 900px;
+      margin: 0 auto;
+    }
+    
+    .logo div a img  {
+      width: 50px;
+      height: 50px;
       float: left;
- }
- .elementos li ul {
-     display: none;
-     position: absolute;
-     max-width: 150px;
- }
- .elementos li:hover > ul {
-     display: block;
- }
- .elementos li lu li {
-     position: relative;
+      padding: 8px;  
+    }  
+    nav {
+      float: right;
+    }
+    
+    nav ul li {
+      list-style: none;
+      margin-left: 75px;
+      padding: 12px 0;
+      float: left;
+      position: relative;
+    }
+    
+    nav ul li a img {
+      width: 150px;
+      height: 150px;
+      float: left;
+      padding: 4px;
+    }
+  
+  
+    nav ul li a {
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+    
+    nav ul li a::before {
+      display: block;
+      content: '';
+      width: 0%;
+      background: #444;
+      height: 5px;
+      top:0;
+      position: absolute;
+      transition: width 0.2s;
+    }
+    
+    nav ul li a:hover::before {
+      width: 100%;
+    }
+    
+/*Estilo menu desplegable*/
+    #menudesplegable{
+      margin: auto;
+      width: auto;    
+     
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  ul, ol{
+      list-style: none;
+  }
+  .elementos li a{
+     background-color: #ffefd5;
+     color: #8b4513;
+     text-decoration: none;
+     padding: 15px 82px;
+     display: inline-flex;
+  }
+  .elementos li a:hover{
+ background-color: #444;
+  }
+  .elementos > li{
+    float: left;
+     
+  }
+  .elementos li ul {
+      display: none;
+      position: absolute;
+      max-width: 850px;
+  }
+  .elementos li:hover > ul {
+      display: block;
+  }
+  .elementos li ul li {
+      position: relative;
+  }
+#menudesplegable ul li img {
+  width: 200px;
+  height: 200px;
+  float:none;
+  padding: 5px; 
+  border-radius: 4px;
  }
 
 
+/*estilo del carrusel*/
+.slider{
  
- 
- 
-
- /*estilo footer*/
- footer{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  height: 120px;
-  margin-top: 30%;
-  background-color: aqua;
+  width: 100%;
+  margin: auto;
+  right: 900px;
+  overflow: hidden;
 }
-footer>a>img{
-  width: 30%;
-  height: 60%;
+  
+.slider ul{
+  padding: 0;
+  display: flex;
+  width: 300%;
+
+  animation: slider 2s infinite alternate;
+  animation-timing-function: linear;
+
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider li img{
+  width: 100%;
+
+}
+
+@keyframes slider{
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100;}
+  45% {margin-left: -100;}
+
+  50% {margin-left: -200;}
+  70% {margin-left: -200;}
+
+  75% {margin-left: -300;}
+  100% {margin-left: -300;}
+
+}
+ 
+
+/*estilo footer*/
+footer {
+  align-self: flex-end;
+  background-color: rgba(245, 193, 151, 0.884);
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  padding: 15px 20px;
+  color: #8b4513;
+ 
+}
+footer>div>a>img{
+  width: 70px;
+  height: 50px;
+  float: right;
+  padding: 8px
+  
+}
+
+footer #logopagos img{
+
+  width: 600px;
+  height: 80px;
+  float: left;  
+}
+
+footer>address{
+  font-size: 15px;
+  font-style:italic;  
+  color: #8b4513;
+  
 }
